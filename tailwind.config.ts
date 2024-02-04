@@ -33,6 +33,12 @@ const config: Config = {
         "body-lg": ["20px", { fontWeight: 600, lineHeight: "30px" }],
         "body-md": ["17px", { fontWeight: 400, lineHeight: "25.5px" }],
       },
+      transitionDuration: {
+        "250": "250ms",
+      },
+      boxShadow: {
+        "card-shadow": "box-shadow: 0px 0px 10.869564056396484px 0px #00000040",
+      },
     },
   },
   plugins: [],
