@@ -1,9 +1,14 @@
 import React from "react";
+
 import TopicCard from "./_components/topicCard";
+import ArticleCard from "./_components/articleCard";
 import Advertisements from "./_components/advertisements";
 
 import { TopicData } from "@/utils/topicData";
 import { AdvertisementData } from "@/utils/advertisementData";
+import { ArticlesData } from "@/utils/articlesData";
+import StoriesCard from "./_components/storiesCard";
+import { StoriesData } from "@/utils/storiesData";
 
 export default function Home() {
   return (
@@ -19,6 +24,36 @@ export default function Home() {
         {TopicData.map((data) => (
           <TopicCard key={data.title} {...data} />
         ))}
+      </div>
+
+      <div className="grid gap-4 lg:gap-6">
+        <div className="flex items-center justify-between">
+          <h4 className="text-display-sm text-[#212121]">Top Articles</h4>
+          <button className="text-body-lg h-12 px-3 transition-all duration-250 ease-in-out bg-transparent hover:bg-[#eee5ff] rounded-xl text-[#9058FF]">
+            See all
+          </button>
+        </div>
+
+        <div className="article-wrapper snaps-inline mb-9 rounded-3xl">
+          {ArticlesData.map((data) => (
+            <ArticleCard key={data.title} {...data} />
+          ))}
+        </div>
+      </div>
+
+      <div className="grid gap-4 lg:gap-6">
+        <div className="flex items-center justify-between">
+          <h4 className="text-display-sm text-[#212121]">Top Stories</h4>
+          <button className="text-body-lg h-12 px-3 transition-all duration-250 ease-in-out bg-transparent hover:bg-[#eee5ff] rounded-xl text-[#9058FF]">
+            See all
+          </button>
+        </div>
+
+        <div className="article-wrapper stories-wrapper snaps-inline mb-9 rounded-3xl">
+          {StoriesData.map((data, index) => (
+            <StoriesCard key={index} {...data} />
+          ))}
+        </div>
       </div>
 
       <div className="grid gap-4 lg:gap-6">
