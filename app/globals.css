@@ -27,4 +27,29 @@ body {
 }
 
 @layer utilities {
+  .nav-link:nth-child(4) {
+    stroke: #292d32;
+    stroke-width: 0.25px;
+  }
+  .nav-link-white:nth-child(4) {
+    stroke: white;
+    stroke-width: 0.25px;
+  }
+  .scrim[data-overlay="false"]::after,
+  .scrim[data-overlay="true"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.242),
+      rgba(0, 0, 0, 0.903)
+    );
+    opacity: 0;
+    transition: all 450ms ease-in-out;
+  }
+  .scrim[data-overlay="true"]::after {
+    opacity: 1;
+    transition: all 250ms ease-in-out;
+  }
 }
