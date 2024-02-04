@@ -25,7 +25,7 @@ export default function Sidebar() {
     <>
       <aside
         ref={sidebarRef}
-        className={`sidebar max-lg:fixed max-lg:top-0 max-lg:h-full lg:w-80 bg-white lg:pointer-events-auto lg:opacity-100 group/sidebar transition-all ease-in-out w-[85%] sm:max-w-[280px] px-4 sm:px-6 rounded-e-2xl lg:py-4 max-lg:pt-8 lg:relative overflow-y-auto z-[99999] ${
+        className={`max-lg:fixed max-lg:top-0 max-lg:h-full lg:w-80 bg-white lg:pointer-events-auto lg:opacity-100 group/sidebar transition-all ease-in-out w-[85%] sm:max-w-[280px] px-4 sm:px-6 rounded-e-2xl lg:py-4 max-lg:pt-8 lg:relative z-[99999] ${
           isSidebarOpen
             ? "max-lg:left-0 max-lg:opacity-100 max-lg:pointer-events-auto max-lg:duration-[250ms]"
             : "max-lg:left-[-500px] max-lg:opacity-0 max-lg:pointer-events-none max-lg:duration-[450ms]"
@@ -41,7 +41,7 @@ export default function Sidebar() {
           </button>
         </div>
 
-        <div className="flex flex-col lg:gap-8 h-full justify-around">
+        <div className="flex flex-col lg:gap-8 h-full justify-around lg:justify-start">
           <div className="flex flex-col gap-2">
             {navLinksData.map((link, index) => (
               <button
