@@ -8,7 +8,7 @@ export default function useClickOutside(
 ) {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (!ref?.current?.contains(e.target)) callback();
+      if (!ref?.current?.contains(e.target as Node)) callback();
     };
 
     document.addEventListener("mousedown", handleClickOutside);
