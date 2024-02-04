@@ -28,6 +28,7 @@ const config: Config = {
         "label-md": ["16px", { fontWeight: 600, lineHeight: "19.2px" }],
         "label-sm2": ["14px", { fontWeight: 600, lineHeight: "16.8px" }],
         "label-sm": ["14px", { fontWeight: 500, lineHeight: "19.1px" }],
+        "label-xs2": ["12px", { fontWeight: 600, lineHeight: "14.4px" }],
         "label-xs": ["12px", { fontWeight: 400, lineHeight: "14.52px" }],
         "label-xxs": ["10px", { fontWeight: 500, lineHeight: "12px" }],
         "body-lg": ["20px", { fontWeight: 600, lineHeight: "30px" }],
