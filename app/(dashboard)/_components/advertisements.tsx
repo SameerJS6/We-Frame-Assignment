@@ -19,13 +19,13 @@ export default function Advertisements({
     >
       <Image
         src={image}
-        alt="Advertisement One"
-        width={125}
+        alt="Advertisements Poster"
+        width={255}
         height={212}
-        className="object-cover w-full aspect-video"
+        className="object-cover sm:w-44 w-full aspect-video"
       />
 
-      <div className="flex flex-col justify-between max-sm:px-4 max-sm:pb-4 sm:py-4 pr-4">
+      <div className="flex flex-[5] flex-col justify-between max-sm:px-4 max-sm:pb-4 sm:py-4 pr-4">
         <h4 className="text-[#22285E] text-display-sm sm:text-label-xl mb-1 sm:mb-3">
           {title}
         </h4>
@@ -36,9 +36,13 @@ export default function Advertisements({
             Visit
           </button>
           <button className="bg-[#FAFAFA] rounded-[10px] h-12 px-4 grid place-content-center">
-            <span className="material-symbols-rounded text-[#7750F1]">
-              more_vert
-            </span>
+            <Image
+              src="/icons/hor-dots.png"
+              alt="Horizontal kebab Menu"
+              width={28}
+              height={8}
+              className="w-4 sm:w-5"
+            />
           </button>
         </div>
       </div>
