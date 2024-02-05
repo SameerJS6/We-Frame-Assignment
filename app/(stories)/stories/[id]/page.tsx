@@ -99,22 +99,23 @@ export default function Stories({ params }: { params: { id: string } }) {
             </div>
           </div>
 
-          <button className="absolute z-20 max-md:-bottom-16 max-md:right-0 md:top-1/2 md:-translate-y-1/2 md:right-[15%] xl:right-[20%] bg-[#212121] h-12 rounded-[10px] transition-all duration-250 ease-in-out hover:bg-zinc-950 px-3 grid place-content-center">
+          <button className="absolute z-20 max-md:-bottom-16 max-md:right-0 md:top-1/2 md:-translate-y-1/2 md:right-[15%] xl:right-[20%] bg-[#212121] h-12 rounded-[10px] transition-all duration-250 ease-in-out hover:bg-zinc-950 px-4 grid place-content-center">
             <Image
               src="/icons/arrow.png"
               alt="Next Button Arrow"
               width={15}
               height={26}
+              className="w-2"
             />
           </button>
 
-          <button className="absolute z-20 max-md:-bottom-16 max-md:right-12 max-md:mr-2 md:top-1/2 md:-translate-y-1/2 md:left-[15%] xl:left-[20%] bg-[#212121] h-12 rounded-[10px] transition-all duration-250 ease-in-out hover:bg-zinc-950 px-3 grid place-content-center">
+          <button className="absolute z-20 max-md:-bottom-16 max-md:right-12  md:top-1/2 md:-translate-y-1/2 md:left-[15%] xl:left-[20%] bg-[#212121] h-12 rounded-[10px] transition-all duration-250 ease-in-out hover:bg-zinc-950 px-4 grid place-content-center">
             <Image
               src="/icons/arrow.png"
               alt="Next Button Arrow"
               width={15}
               height={26}
-              className="rotate-180"
+              className="w-2 rotate-180"
             />
           </button>
         </section>

@@ -62,7 +62,12 @@ export default function Navbar({ setIsSidebarOpen }: NavbarProps) {
         >
           <div className="absolute top-1/2 -translate-y-1/2 left-2.5 lg:left-4 text-[#030229]">
             <div className="size-4 xl:size-5">
-              <Image src="/icons/search.png" alt="Search Icon" fill />
+              <Image
+                src="/icons/search.png"
+                alt="Search Icon"
+                width={20}
+                height={5.83}
+              />
             </div>
           </div>
           <input
