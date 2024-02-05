@@ -50,6 +50,7 @@ body {
   grid-auto-columns: var(--column-size);
 
   overflow-x: auto;
+  /* scrollbar-gutter: stable; */
   overscroll-behavior-inline: contain;
 }
 
@@ -96,6 +97,28 @@ body {
 .snaps-inline > * {
   scroll-snap-align: start;
 }
+
 .article-wrapper::-webkit-scrollbar {
   display: none;
+}
+@media (hover: hover) {
+  .article-wrapper::-webkit-scrollbar {
+    height: 0px;
+    display: block;
+    margin-inline: 1rem;
+    border-radius: 100vmax;
+    background: transparent;
+    transition: all 250ms ease-in-out;
+  }
+  .article-wrapper:hover::-webkit-scrollbar {
+    height: 7px;
+  }
+  .article-wrapper::-webkit-scrollbar-track {
+    margin-inline: 2rem;
+    border-radius: 100vmax;
+  }
+  .article-wrapper::-webkit-scrollbar-thumb {
+    background: #292d32;
+    border-radius: 100vmax;
+  }
 }

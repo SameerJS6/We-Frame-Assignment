@@ -1,8 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
+import Image from "next/image";
+import Link from "next/link";
+
 type StoriesCardProps = {
+  id: number;
   title: string;
   image: string;
   label: string;
@@ -12,6 +14,7 @@ type StoriesCardProps = {
 };
 
 export default function StoriesCard({
+  id,
   title,
   image,
   label,
@@ -86,15 +89,19 @@ export default function StoriesCard({
 
             <div className="flex items-center justify-between gap-3 mt-2">
               <Link
-                href="/stories"
+                href={`/stories/${id}`}
                 className="text-[#7750F1] grid place-content-center text-label-lg font-semibold rounded-[10px] bg-[#E8E9FF] h-12 text-center flex-1 transition-all duration-250 ease-in-out hover:bg-[#cfd1ff]"
               >
-                Visit
+                View
               </Link>
               <button className="bg-[#FAFAFA] rounded-[10px] h-12 px-4 grid place-content-center">
-                <span className="material-symbols-rounded text-[#7750F1]">
-                  more_vert
-                </span>
+                <Image
+                  src="/icons/hor-dots.png"
+                  alt="Horizontal kebab Menu"
+                  width={28}
+                  height={8}
+                  className="w-4 sm:w-5"
+                />
               </button>
             </div>
           </div>
