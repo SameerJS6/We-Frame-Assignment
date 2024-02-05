@@ -1,6 +1,6 @@
 const ArticlesData = [
   {
-    image: "/icons/article1.png",
+    image: "/images/article1.png",
     title: "7 Rules of Effective Branding",
     description: "Why Branding matters for your Business",
     chips: ["Branding", "Communication", "Branding"],
@@ -10,7 +10,7 @@ const ArticlesData = [
     time: "20 Sep 2022",
   },
   {
-    image: "/icons/economy.png",
+    image: "/images/article2.png",
     title: "Research on biodiversity an environment",
     description: "Lorem ipsum dolor sit amet, consectetur",
     chips: ["World", "Population"],
@@ -20,7 +20,7 @@ const ArticlesData = [
     time: "20 Sep 2022",
   },
   {
-    image: "/icons/politics.png",
+    image: "/images/article3.png",
     title: "Close and historical ties to the government",
     description: "Lorem ipsum dolor sit amet, consectetur",
     chips: ["Politics", "Defense"],
@@ -30,7 +30,7 @@ const ArticlesData = [
     time: "20 Sep 2022",
   },
   {
-    image: "/icons/article1.png",
+    image: "/images/article1.png",
     title: "7 Rules of Effective Branding",
     description: "Why Branding matters for your Business",
     chips: ["Branding", "Communication", "Branding"],
@@ -40,8 +40,8 @@ const ArticlesData = [
     time: "20 Sep 2022",
   },
   {
-    image: "/icons/economy.png",
-    title: "Research on biodiversity an ",
+    image: "/images/article2.png",
+    title: "Research on biodiversity an environment",
     description: "Lorem ipsum dolor sit amet, consectetur",
     chips: ["World", "Population"],
     category: "economy",
@@ -50,7 +50,7 @@ const ArticlesData = [
     time: "20 Sep 2022",
   },
   {
-    image: "/icons/politics.png",
+    image: "/images/article3.png",
     title: "Close and historical ties to the government",
     description: "Lorem ipsum dolor sit amet, consectetur",
     chips: ["Politics", "Defense"],

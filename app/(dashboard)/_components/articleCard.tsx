@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 type ArticleCardProps = {
   title: string;
@@ -49,7 +49,7 @@ export default function ArticleCard({
           </div>
           <div>
             <Image
-              src="/icons/marie.png"
+              src="/images/marie.png"
               alt="Marie Doe Profile Picture"
               width={30}
               height={30}
@@ -91,12 +91,6 @@ export default function ArticleCard({
             <p>{chip}</p>
           </div>
         ))}
-        {/* <div className="rounded-md h-8 sm:h-10 px-5 grid place-content-center text-[#A0A3BD] text-label-md bg-[#F8FAFB]">
-          <p>Communication</p>
-        </div>
-        <div className="rounded-md h-8 sm:h-10 px-5 grid place-content-center text-[#A0A3BD] text-label-md bg-[#F8FAFB]">
-          <p>Branding</p>
-        </div> */}
       </div>
 
       <div className="flex items-center justify-between gap-3 mt-2">
@@ -104,9 +98,13 @@ export default function ArticleCard({
           Visit
         </button>
         <button className="bg-[#FAFAFA] rounded-[10px] h-12 px-4 grid place-content-center">
-          <span className="material-symbols-rounded text-[#7750F1]">
-            more_vert
-          </span>
+          <Image
+            src="/icons/hor-dots.png"
+            alt="Horizontal kebab Menu"
+            width={28}
+            height={8}
+            className="w-4 sm:w-5"
+          />
         </button>
       </div>
     </div>
