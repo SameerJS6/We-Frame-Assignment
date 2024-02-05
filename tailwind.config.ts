@@ -38,7 +38,7 @@ const config: Config = {
         "250": "250ms",
       },
       boxShadow: {
-        "card-shadow": "box-shadow: 0px 0px 10.869564056396484px 0px #00000040",
+        "card-shadow": "0px 0px 10.869564056396484px 0px #00000040",
       },
     },
   },
