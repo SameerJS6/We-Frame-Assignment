@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# We Frame Assignment
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a Next JS application for We Tech Frame. It's a Dashboard UI Project.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Mockups
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Desktop UI:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![](https://lh3.googleusercontent.com/pw/ABLVV84kSKyer2w-czZMwCMohSCL4IfCVJJcYMIRHgfNB3uCdPTuAvulA_CLZF0XS2rCIIOsOj5MKvSi8xDbQetJ0oY8Aes2Odp96aK-d5hNNOYW3bcJyfNThDYFSst4C7qDf7M4pjeywZiS8oY93ADsd99z=w1200-h900-s-no)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![](https://lh3.googleusercontent.com/pw/ABLVV87jvLDMM5eUQcpnWLLnAP0w6FKKZ8LUp4_HU5-_2z8UCqXuLpYhPl0LEYXaNu9VB8cl6Crw3AhJI-GkmwV4Fjl62xrZhVZKBmcMQNFpPsJCVdTeAujzcPt4j2-mN7Jq7fQoJQmuZECKOFtGQdIkdpC5=w1200-h900-s-no)
 
-## Learn More
+#### Tablet UI:
 
-To learn more about Next.js, take a look at the following resources:
+![](https://lh3.googleusercontent.com/pw/ABLVV85fWLqpnTWnkMfRZhotjnugQisps1NFAeHM9fj-_gIlFENh02JZTjnsBzFGe7feulEyXhtT2isRtp0e1-kQOUsEErC5MlY1mbcPWcR-MsJXH43xYooJgFbowsriFzrnyqejtmbfEIOYZfmAoSYiKwdm=w1200-h900-s-no)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Mobile UI:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![](https://lh3.googleusercontent.com/pw/ABLVV86nkZTxskwCmHAlsg5LEiIAMAZm_FW2AxIwvL5kyLu7hQwWoSsB9veF26AtSBsBnAneuErJiRkI5W_VWK_vy1FaKjYCf28b_tZo8kWf4x3CbkhIL7scIM44WLPOXrrBjcYgWD6LtyYL97GyStEGNCuv=w1200-h900-s-no)
