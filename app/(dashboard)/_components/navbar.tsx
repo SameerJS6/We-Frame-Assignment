@@ -61,14 +61,15 @@ export default function Navbar({ setIsSidebarOpen }: NavbarProps) {
           } relative rounded-xl h-10 lg:h-12`}
         >
           <div className="absolute top-1/2 -translate-y-1/2 left-2.5 lg:left-4 text-[#030229]">
-            <div className="size-4 xl:size-5">
-              <Image
-                src="/icons/search.png"
-                alt="Search Icon"
-                width={20}
-                height={5.83}
-              />
-            </div>
+            {/* <div className="size-4 xl:size-5"> */}
+            <Image
+              src="/icons/search.png"
+              alt="Search Icon"
+              width={20}
+              height={5.83}
+              className="size-4 xl:size-5"
+            />
+            {/* </div> */}
           </div>
           <input
             type="text"
