@@ -1,9 +1,12 @@
 "use client";
 
 import React, { ElementRef, useEffect, useRef, useState } from "react";
-import { navLinksData } from "@/utils/navLink";
-import useClickOutside from "@/hooks/useClickOutside";
+
 import Navbar from "./navbar";
+import NavButton from "@/components/ui/navButton";
+
+import useClickOutside from "@/hooks/useClickOutside";
+import { navLinksData } from "@/utils/navLink";
 
 export default function Sidebar() {
   const sidebarRef = useRef<ElementRef<"aside">>(null);
@@ -25,7 +28,7 @@ export default function Sidebar() {
     <>
       <aside
         ref={sidebarRef}
-        className={`max-lg:fixed max-lg:top-0 max-lg:h-full lg:w-80 bg-white lg:pointer-events-auto lg:opacity-100 group/sidebar transition-all ease-in-out w-[85%] sm:max-w-[280px] px-4 sm:px-6 rounded-e-2xl lg:py-4 max-lg:pt-8 lg:relative z-[99999] ${
+        className={`fixed max-lg:top-0 max-lg:h-full lg:w-80 bg-white lg:pointer-events-auto lg:opacity-100 group/sidebar transition-all ease-in-out w-[85%] sm:max-w-[280px] px-4 sm:px-6 rounded-e-2xl lg:py-4 max-lg:pt-8 overflow-y-auto h-full z-[99999] ${
           isSidebarOpen
             ? "max-lg:left-0 max-lg:opacity-100 max-lg:pointer-events-auto max-lg:duration-[250ms]"
             : "max-lg:left-[-500px] max-lg:opacity-0 max-lg:pointer-events-none max-lg:duration-[450ms]"
@@ -41,30 +44,41 @@ export default function Sidebar() {
           </button>
         </div>
 
-        <div className="flex flex-col lg:gap-8 h-full justify-around lg:justify-start">
+        <div className="flex flex-col lg:gap-8 justify-around max-lg:h-full lg:justify-start">
           <div className="flex flex-col gap-2">
             {navLinksData.map((link, index) => (
-              <button
+              <NavButton
                 key={index}
-                className={`flex gap-4 items-center transition-all duration-[250ms] ease-in-out rounded-xl h-[40px] sm:h-[48px] lg:h-14 px-5 text-label-sm2 active:rounded-3xl ${
-                  activeIndex === index
-                    ? "bg-purple-500 text-white hover:bg-purple-600 fill-white last-of-type:stroke-white nav-link-white"
-                    : "text-[#53545C] hover:bg-zinc-100 fill-[#292D32] last-of-type:stroke-[#53545C] nav-link"
-                }`}
-                onClick={() => setActiveIndex(index)}
-              >
-                {link.icon}
-                <p>{link.label}</p>
-                {link.badge && (
-                  <span
-                    className={`grid place-content-center text-label-xs size-5 lg:size-6 rounded-full ${
-                      activeIndex === index ? "bg-white" : "bg-[#E8E9FF]"
-                    } text-[#7950F2]`}
-                  >
-                    {link.badge}
-                  </span>
-                )}
-              </button>
+                index={index}
+                label={link.label}
+                icon={link.icon}
+                badge={link?.badge}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+              />
+              //   <button
+              //     key={index}
+              //     className={`flex gap-4 items-center transition-all duration-[250ms] ease-in-out rounded-xl h-[40px] sm:h-[48px] lg:h-14 px-5 text-label-sm2 active:rounded-3xl ${
+              //       activeIndex === index
+              //         ? "bg-purple-500 text-white hover:bg-purple-600 fill-white last-of-type:stroke-white nav-link-white"
+              //         : "text-[#53545C] hover:bg-zinc-100 fill-[#292D32] last-of-type:stroke-[#53545C] nav-link"
+              //     }`}
+              //     onClick={() => setActiveIndex(index)}
+              //   >
+              //     {link.icon}
+              //     <p>{link.label}</p>
+              //     {link.badge && (
+              //       <span
+              //         className={`${
+              //           inter.className
+              //         } grid place-content-center text-label-xs size-5 lg:size-6 rounded-full ${
+              //           activeIndex === index ? "bg-white" : "bg-[#E8E9FF]"
+              //         } text-[#7950F2]`}
+              //       >
+              //         {link.badge}
+              //       </span>
+              //     )}
+              //   </button>
             ))}
           </div>
           <a
